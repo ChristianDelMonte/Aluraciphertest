@@ -1,0 +1,248 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: #F3F5FC;
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0em;
+}
+
+.contenido {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.imagen_cabecera {
+    position: absolute;
+}
+
+.imagen_cabecera > img {
+    position: relative;
+    left: 84px;
+    top: 40px;
+    width: 31.09px;
+    height: 48px;
+}
+
+.titulo {
+  font-size: 20px;
+  color: #0A3871;
+  text-align: center;
+}
+
+main {
+    height: 100%;
+}
+
+.cipher {
+    margin: 0 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cipher_form {
+    flex-basis: calc(65% - 80px);
+}
+
+.texto_entrada {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto_entrada > textarea {
+    margin-top: 160px;
+    flex-basis: 100%;
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    color:#0A3871;
+    line-height: 48px;
+    background-color: transparent;
+    resize: none;
+    border: none;
+}
+
+.texto_entrada > textarea:focus {
+    outline: none
+}
+
+.texto_entrada > textarea::-webkit-input-placeholder {
+    color: #0A3871;
+}
+
+.info_de_texto {
+    width: 100%;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.info > p {
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    color: #495057;
+}
+
+.info > img {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+.botones {
+    display: flex;
+    width: 100%;
+}
+
+.botones > input {
+    flex-basis: 50%;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 23px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    transform: scale(1);
+    transition: transform 0.2s; 
+}
+
+.botones > input:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s
+}
+
+.botones > input:first-child {
+    margin-right: 15px;
+    background-color:#0A3871;
+    color: #FFF;
+}
+
+.botones > input:first-child:active {
+    background-color: #000;
+}
+
+.botones > input:last-child {
+    margin-left: 15px;
+    background-color:#D8DFE8;
+    color: #0A3871;
+}
+
+.botones > input:last-child:active {
+    color: #FFF;
+    background-color: #000;
+}
+
+.texto_salida {
+    margin: 40px 40px;
+    flex-basis: calc(35% - 80px);
+}
+
+.contenido_salida {
+    position: relative;
+    height: 100%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.otro {
+    height: 100%;
+    margin: 40px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.otro > p:nth-child(2) {
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+}
+
+.otro > p:nth-child(3) {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.imagen_texto {
+    text-align: center;
+}
+
+.imagen_texto > img {
+    width: 336px;
+    height: 304px;
+    object-fit: cover;
+    display: inline-block;
+}
+
+#salida {
+    flex-basis: calc(100% - (67px + 32px));
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    line-height: 36px;
+    color:#495057;
+    background-color: transparent;
+    resize: none;
+    border: none;
+}
+
+#copiar {
+    height: 67px;
+    margin-top: 32px;
+    background-color: #FFF;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 19px;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+#copiar:hover {
+    transform: scale(1.1);
+}
+
+#copiar:last-child:active {
+    color: #FFF;
+    background-color: #000;
+}
+
+.invisible {
+    display: none;
+}
+
+.pie {
+  font-size: 20px;
+  color: #0A3871;
+  text-align: center;
+}

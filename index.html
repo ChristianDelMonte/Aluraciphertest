@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador / Desencriptador Oracle AluraLATAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <div class="contenido">
+            <div class="imagen_cabecera">
+                <img src="./imgs/a_logo.png" alt="Logo">
+            </div>
+            <div class="titulo">ENCRIPTADOR / DESENCRIPTADOR ALURA</div>
+        </div>
+    </header>
+    <main>
+        <div class="contenido">
+            <div class="cipher">
+                <form class="cipher_form">
+                    <div class="texto_entrada">
+                        <textarea name="area_de_teto" id="texto" placeholder="Ingrese el texto aqui" required></textarea>
+                        <div class="info_de_texto">
+                            <div class="info">
+                                <img src="./imgs/info.png" alt="">
+                                <p id="cuidado">Solo letras minúsculas y sin acentos por favor</p>
+                            </div>
+                            <div class="botones">
+                                <input id="enc" type="button" value="> Encriptar <">
+                                <input id="des" type="button" value="> Desencriptar <">
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+
+                <div class="texto_salida">
+                    <div class="contenido_salida">
+                        <div class="otro" id="por_defecto">
+                            <div class="imagen_texto">
+                                <img src="./imgs/hombre.svg" alt="hombrecito">
+                            </div><p>Ningún texto fue encontrado</p>
+                            <p>Escriba el texto que a encriptar o desencriptar.</p>
+                        </div>
+                        <div class = "otro invisible" id="resultado">
+                            <textarea name="texto_salida" id="salida" disabled></textarea>
+                            <button id="copiar">Copiar</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="pie">
+            2022 - Christian A. Del Monte
+        </div>
+    </footer>
+</body>
+<script src="cipher.js"></script>
+</html>
